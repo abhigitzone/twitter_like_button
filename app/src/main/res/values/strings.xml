@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">AnimatedButton</string>
+    <string name="information">This app is powered by "Joel Dean" aka jd-alexander library. The purpose of making this
+        application is to solve the padding error I was facing. </string>
+    <string name="txt2">Error I was facing</string>
+    <string name="txt3">After Fixed</string>
+</resources>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/txt1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="4dp"
+        android:gravity="center"
+        android:text="@string/information"
+        android:textColor="@android:color/black"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/txt2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txt1"
+        android:layout_margin="20dp"
+        android:gravity="center"
+        android:text="@string/txt2"
+        android:textColor="@android:color/holo_red_dark"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <com.like.LikeButton
+        android:id="@+id/heart_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txt2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        app:icon_size="25dp"
+        app:icon_type="heart" />
+
+    <TextView
+        android:id="@+id/txt3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/heart_btn"
+        android:layout_margin="20dp"
+        android:layout_marginBottom="20dp"
+        android:gravity="center"
+        android:text="@string/txt3"
+        android:textColor="@android:color/holo_green_dark"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <com.like.LikeButton
+        android:id="@+id/vector_heart_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txt3"
+        android:layout_centerHorizontal="true"
+        app:circle_end_color="@android:color/holo_orange_dark"
+        app:circle_start_color="@android:color/holo_orange_dark"
+        app:dots_primary_color="@android:color/holo_red_dark"
+        app:dots_secondary_color="@android:color/holo_orange_dark"
+        app:icon_size="22dp"
+        app:like_drawable="@drawable/ic_baseline_favorite_24"
+        app:unlike_drawable="@drawable/heart_uncheck" />
+
+</RelativeLayout>
